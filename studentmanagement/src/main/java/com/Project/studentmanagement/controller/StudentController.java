@@ -6,16 +6,20 @@ import com.Project.studentmanagement.dto.StudentResponseDTO;
 import com.Project.studentmanagement.entity.Student;
 import com.Project.studentmanagement.service.StudentService;
 import jakarta.validation.Valid;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
+@Validated
 @RequiredArgsConstructor
 @RequestMapping("/api/v1/students")
 
@@ -44,8 +48,10 @@ private final StudentService service;
 //    }
 @GetMapping //get all student with page and proper msg
 public ResponseEntity<ApiResponse<Page<StudentResponseDTO>>> getAllStudents(
-        @RequestParam(defaultValue = "0") int page,
-        @RequestParam(defaultValue = "5") int size) {
+        @RequestParam @Min(0) int page,
+        @RequestParam @Min(1) @Max(10) int size){
+
+
 
     Page<StudentResponseDTO> students = service.getAllStudents(page, size); //page
 
