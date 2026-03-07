@@ -6,36 +6,36 @@ It allows managing student records with proper layered architecture and best bac
 ## 🚀 Features
 
 - Student CRUD APIs (Create, Read, Update, Delete)
--Database Integration (MySQL / PostgreSQL)
--Proper Table Design (Primary Key, Unique, Not Null)
--DTO Usage (Request & Response)
--Validations (@NotNull, @NotBlank, @Email, @Size)
--Pagination Support
--Search API
--Global Exception Handling
--Custom Exception (ResourceNotFoundException)
--Clean Response Structure (status, message, data)
--Proper HTTP Status Codes (200, 201, 400, 404, 500)
+- Database Integration (MySQL / PostgreSQL)
+- Proper Table Design (Primary Key, Unique, Not Null)
+- DTO Usage (Request & Response)
+- Validations (@NotNull, @NotBlank, @Email, @Size)
+- Pagination Support
+- Search API
+- Global Exception Handling
+- Custom Exception (ResourceNotFoundException)
+- Clean Response Structure (status, message, data)
+- Proper HTTP Status Codes (200, 201, 400, 404, 500)
 
 ## 🛠 Tech Stack
 
--Java
--Spring Boot
--Spring Data JPA
--Hibernate
--MySQL 
--Maven
--Lombok
+- Java
+- Spring Boot
+- Spring Data JPA
+- Hibernate
+- MySQL 
+- Maven
+- Lombok
 
 ## 📂 Project Structure
 
--controller - API endpoints
--service - business logic
--repository - database operations
--entity - database entity classes
--dto - request and response DTOs
--exception - custom exception and global exception handler
--response - API response wrapper
+- controller - API endpoints
+- service - business logic
+- repository - database operations
+- entity - database entity classes
+- dto - request and response DTOs
+- exception - custom exception and global exception handler
+- response - API response wrapper
 
 ## ⚙️ Setup & Run
 
