@@ -5,7 +5,7 @@ It allows managing student records with proper layered architecture and best bac
 
 ## 🚀 Features
 
--Student CRUD APIs (Create, Read, Update, Delete)
+- Student CRUD APIs (Create, Read, Update, Delete)
 -Database Integration (MySQL / PostgreSQL)
 -Proper Table Design (Primary Key, Unique, Not Null)
 -DTO Usage (Request & Response)
