@@ -1,9 +1,9 @@
-Student Management System - Backend (Spring Boot)
+# Student Management System - Backend (Spring Boot)
 
 Student Management System is a backend REST API application built using Spring Boot.
 It allows managing student records with proper layered architecture and best backend practices.
 
-🚀 Features
+## 🚀 Features
 
 Student CRUD APIs (Create, Read, Update, Delete)
 Database Integration (MySQL / PostgreSQL)
@@ -17,7 +17,7 @@ Custom Exception (ResourceNotFoundException)
 Clean Response Structure (status, message, data)
 Proper HTTP Status Codes (200, 201, 400, 404, 500)
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 
 Java
 Spring Boot
@@ -27,7 +27,7 @@ MySQL / PostgreSQL
 Maven
 Lombok
 
-📂 Project Structure
+## 📂 Project Structure
 
 controller - API endpoints
 service - business logic
@@ -37,7 +37,7 @@ dto - request and response DTOs
 exception - custom exception and global exception handler
 response - API response wrapper
 
-⚙️ Setup & Run
+## ⚙️ Setup & Run
 
 Clone the repository
 
